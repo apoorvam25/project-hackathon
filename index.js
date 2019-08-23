@@ -9,6 +9,14 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+app.get('/about' , (req,res) => {
+    res.render('aboutus')
+})
+
+app.get('/contact', (req,res) => {
+    res.render('contactus')
+})
+
 app.listen( 3000, () => {
     console.log("Server Connected")
 })
